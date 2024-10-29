@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'Newsport';
+  src: url('font/newsport/NewsportDemoRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sporta';
+  src: url('font/sporta/Sporta.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Estilos generales */
+
+body {
+  font-family: 'Lato', sans-serif;
+  /* display: flex;
+  min-height: 100vh;
+  flex-direction: column; */
+}
+
+
+main {
+  flex: 1;
+}
+
+
+h5{
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+/* Estilos del encabezado */
+header {
+    background-color: #020997;
+    /* background-image: linear-gradient(to right,#020997,#E9AD00);
+*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+
+#noticia{
+
+  font-family:'sporta' ;
+}
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+#demo{
+    background-color: #020997;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#canva1{
+  color: #fff; 
+  padding-bottom: 30px; 
+  padding-top: 30px;
+  transition: 0.3s;
+}
+
+#canva2, #canva3, #canva4{
+  color: #fff; 
+  padding-bottom: 30px;
+  transition: 0.3s;
+}
+
+#canva1:hover, #canva2:hover, #canva3:hover, #canva4:hover{
+color:#E9AD00;
+text-shadow: 3px 3px #000;
+}
+
+#canvastitle{
+  color:#fff;
+  text-shadow: 4px 4px #000;
+}
+  
+
+  /* En tu archivo ./css/style.css */
+
+.menu-toggle {
+    background: none;
+/* Elimina el fondo */
+    border: none; /* Elimina el borde */
+    padding: 10px;
+/* Ajusta el espacio alrededor de las líneas */
+    cursor: pointer;
+/* Cambia el cursor al pasar el ratón */
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* Color de las líneas */
+    margin: 5px 0;
+/* Espacio entre las líneas */
+    border-radius: 3px;
+    transition: 0.3s;
+/* Transición suave al hacer hover */
+  }
+  
+  .menu-toggle:hover span {
+    background-color: #E9AD00;
+/* Cambia el color al hacer hover */
+  }
+
+  #nav1 {
+    /* font-size: 18px;
+*/
+    color: #e1e1e1;
+    font-family: inherit;
+ 
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  #nav1:focus,
+  #nav1:hover {
+    text-shadow: 2px 2px #000;
+    color: #E9AD00;
+  }
+  
+  #nav1:focus:after,
+  #nav1:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  #nav1:after {
+    content: "";
+    
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    
+    background-color: #E9AD00;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+@media (max-width: 992px) { 
+  .navbar-toggler {
+      display: none;
+  }
+  .menu-toggle{
+    padding-left:30px;
+  }
+}
+
+@media (max-width: 768px) { 
+  .navbar-nav {
+      flex-direction: column;
+      
+  }
+}
+
+@media (min-width: 992px) { 
+  #navbar {
+    padding-right: 150px; /* Ajusta este valor según lo necesites */
+  }
+
+  .menu-toggle{
+    padding-left:30px;
+  }
+}
+
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) { 
+  .menu-toggle{
+    display: block;
+    margin-left: auto;
+  }
+  .col-1 { /* Apuntamos al contenedor del logo */
+    width: 20vw; /* Ajusta este valor según lo necesites */
+  }
+  #logo {
+    width: 1000px; /* El logo ocupa todo el ancho de su contenedor */
+    height: 40px; /* La altura se ajusta automáticamente */
+  }
+}
+
+
+#buton {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: #020997;
+  border: 2px solid rgb(233, 173, 0);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+#buton::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #E9AD00;
+  transition: all 0.9s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+#buton:hover::before {
+  scale: 3;
+}
+
+#buton:hover {
+  color: #fff;
+  scale: 1.1;
+  box-shadow: 0 0px 20px #E9AD00
+}
+
+#button:active {
+  scale: 1;
+}

@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'Newsport';
+  src: url('font/newsport/NewsportDemoRegular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sporta';
+  src: url('font/sporta/Sporta.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+label {
+  font-family: 'Lato', sans-serif;
+
+}
+
+h5{
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+/* Estilos del encabezado */
+header {
+   
+    background-color: #020997;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+
+/* Estilos del menú de navegación */
+/* #barraprin, #nav1, #nav2, #nav3, #nav4, #nav5, #nav6   {
+    padding-left: 24px;
+    padding-right: 14px;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 30px;
+}
+
+#nav1:hover, #nav2:hover, #nav3:hover, #nav4:hover, #nav5:hover, #nav6:hover {
+    text-shadow: 1px 1px #000;
+    box-shadow: 2px 2px #E9AD00;
+    background-color: #020997; 
+    color: #999;
+    
+  } */
+
+#noticia{
+
+  font-family:'sporta' ;
+}
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+#demo{
+  background-color: #020997;
+    /* background-image: linear-gradient(to bottom,#E9AD00,#020997); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#canva1{
+  color: #fff; 
+  padding-bottom: 30px; 
+  padding-top: 30px;
+  transition: 0.3s;
+}
+
+#canva2, #canva3, #canva4{
+  color: #fff; 
+  padding-bottom: 30px;
+  transition: 0.3s;
+}
+
+#canva1:hover, #canva2:hover, #canva3:hover, #canva4:hover{
+color:#E9AD00;
+text-shadow: 3px 3px #000;
+}
+
+#canvastitle{
+  color:#fff;
+  text-shadow: 4px 4px #000;
+}
+  
+
+  /* En tu archivo ./css/style.css */
+
+.menu-toggle {
+    background: none; /* Elimina el fondo */
+    border: none; /* Elimina el borde */
+    padding: 10px; /* Ajusta el espacio alrededor de las líneas */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* Color de las líneas */
+    margin: 5px 0; /* Espacio entre las líneas */
+    border-radius: 3px;
+    transition: 0.3s; /* Transición suave al hacer hover */
+  }
+  
+  .menu-toggle:hover span {
+    background-color: #555; /* Cambia el color al hacer hover */
+  }
+
+  #nav1 {
+    /* font-size: 18px; */
+    align-items: center;
+    color: #e1e1e1;
+    font-family: inherit;
+ 
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  #nav1:focus,
+  #nav1:hover {
+    text-shadow: 2px 2px #000;
+    color: #E9AD00;
+  }
+  
+  #nav1:focus:after,
+  #nav1:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  #nav1:after {
+    content: "";
+    
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    
+    background-color: #E9AD00;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+  .loader {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    transform: rotate(165deg);
+   }
+   
+   .loader:before, .loader:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%);
+   }
+   
+   .loader:before {
+    animation: before8 2s infinite;
+   }
+   
+   .loader:after {
+    animation: after6 2s infinite;
+   }
+   
+   @keyframes before8 {
+    0% {
+     width: 0.5em;
+     box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+   
+    35% {
+     width: 2.5em;
+     box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);
+    }
+   
+    70% {
+     width: 0.5em;
+     box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+   
+    100% {
+     box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+   }
+   
+   @keyframes after6 {
+    0% {
+     height: 0.5em;
+     box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+   
+    35% {
+     height: 2.5em;
+     box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);
+    }
+   
+    70% {
+     height: 0.5em;
+     box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);
+    }
+   
+    100% {
+     box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+   }
+   
+   .loader {
+    position: absolute;
+    top: calc(50% - 1.25em);
+    left: calc(50% - 1.25em);
+   }

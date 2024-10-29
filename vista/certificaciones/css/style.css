@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'Newsport';
+  src: url('font/newsport/NewsportDemoRegular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sporta';
+  src: url('font/sporta/Sporta.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+/* Estilos generales */
+
+p{
+  font-family: 'Lato', sans-serif;
+
+}
+
+h5{
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+/* Estilos del encabezado */
+header {
+    background-color: #020997;
+    /* background-image: linear-gradient(to right,#020997,#E9AD00); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+/* #nav1{
+  padding-left: 50px;
+} */
+/* Estilos del menú de navegación */
+/* #barraprin, #nav1, #nav2, #nav3, #nav4, #nav5, #nav6   {
+    padding-left: 14px;
+    padding-right: 14px;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 30px;
+} */
+
+/* #nav1:hover, #nav2:hover, #nav3:hover, #nav4:hover, #nav5:hover, #nav6:hover {
+    text-shadow: 1px 1px #000;
+    box-shadow: 2px 2px #E9AD00;
+    background-color: #020997; /* Cambia el color al hacer hover 
+    color: #E9AD00;
+    
+  } */
+
+#noticia{
+
+  font-family:'sporta' ;
+}
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+#demo{
+    background-color: #020997;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    
+}
+
+#canva1{
+  color: #fff; 
+  padding-bottom: 30px; 
+  padding-top: 30px;
+  transition: 0.3s;
+}
+
+#canva2, #canva3, #canva4{
+  color: #fff; 
+  padding-bottom: 30px;
+  transition: 0.3s;
+}
+
+#canva1:hover, #canva2:hover, #canva3:hover, #canva4:hover{
+color:#E9AD00;
+text-shadow: 3px 3px #000;
+}
+
+#canvastitle{
+  color:#fff;
+  text-shadow: 4px 4px #000;
+}
+
+  
+
+  /* En tu archivo ./css/style.css */
+
+.menu-toggle {
+    background: none; /* Elimina el fondo */
+    border: none; /* Elimina el borde */
+    padding: 10px; /* Ajusta el espacio alrededor de las líneas */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* Color de las líneas */
+    margin: 5px 0; /* Espacio entre las líneas */
+    border-radius: 3px;
+    transition: 0.3s; /* Transición suave al hacer hover */
+  }
+  
+  .menu-toggle:hover span {
+    background-color: #555; /* Cambia el color al hacer hover */
+  }
+
+  #nav1 {
+    /* font-size: 18px; */
+    color: #e1e1e1;
+    font-family: inherit;
+ 
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  #nav1:focus,
+  #nav1:hover {
+    text-shadow: 2px 2px #000;
+    color: #E9AD00;
+  }
+  
+  #nav1:focus:after,
+  #nav1:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  #nav1:after {
+    content: "";
+    
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    
+    background-color: #E9AD00;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
